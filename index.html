@@ -174,24 +174,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-    $(document).ready(function() {
-        var url = "https://api.covid19india.org/data.json"
-        $.getJSON(url, function(data) {
-            console.log(data);
-            var total_active, total_recovered, total_deaths, total_confirmed
-            total_active = data.statewise[0].active
-            total_recovered = data.statewise[0].recovered
-            total_deaths = data.statewise[0].deaths
-            total_confirmed = data.statewise[0].confirmed
-
-            $("#active").append(total_active)
-            $("#confirmed").append(total_confirmed)
-            $("#deaths").append(total_deaths)
-            $("#recovered").append(total_recovered)
-
-        })
-    })
-</script>
+<script src="script.js"></script>
+  
 
 </html>
