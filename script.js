@@ -8,10 +8,10 @@
             total_deaths = data.statewise[0].deaths
             total_confirmed = data.statewise[0].confirmed
 
-            $("#active").append(total_active)
-            $("#confirmed").append(total_confirmed)
-            $("#deaths").append(total_deaths)
-            $("#recovered").append(total_recovered)
+            $(".active").append(total_active)
+            $(".confirmed").append(total_confirmed)
+            $(".deaths").append(total_deaths)
+            $(".recovered").append(total_recovered)
 
         })
     })

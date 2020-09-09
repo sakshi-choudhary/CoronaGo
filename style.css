@@ -5,6 +5,7 @@ html {
 body {
     margin: 0;
     font-family: 'Comfortaa', cursive;
+    background-color: #000000;
 }
 
 h1 {
@@ -14,7 +15,7 @@ h1 {
 
 h4,
 h2 {
-    color: #800000;
+    color: #004280;
     text-align: center;
     font-family: 'Rubik', sans-serif;
 }
@@ -28,7 +29,7 @@ nav {
     color: blanchedalmond;
     width: 100%;
     margin: 0 auto;
-    background: #ff9034;
+    background: #000000;
     padding: 20px 0;
 }
 
@@ -45,7 +46,7 @@ nav ul li a {
     display: block;
     padding: 15px;
     text-decoration: none;
-    color: white;
+    color: rgb(187, 187, 187);
     font-weight: 800;
     text-transform: uppercase;
     margin: 0 10px;
@@ -58,7 +59,7 @@ nav ul li a:before {
 }
 
 nav ul li a:hover {
-    color: #fc801b;
+    color: #cecdc9;
 }
 
 nav.fill ul li a {
@@ -74,7 +75,7 @@ nav.fill ul li a:after {
     width: 0%;
     content: '.';
     color: transparent;
-    background: #aaa;
+    background: rgb(177, 176, 173);
     height: 1px;
 }
 
@@ -114,7 +115,7 @@ nav.fill ul li a:hover:after {
     100% {
         width: 100%;
         height: 100%;
-        background: blanchedalmond;
+        background: rgba(192, 191, 189, 0.856);
     }
 }
 
@@ -129,11 +130,11 @@ nav.fill ul li a:hover:after {
     }
     #c {
         font-family: 'Roboto', sans-serif;
-        color: rgb(255, 174, 0);
-        border: 2px solid #fc801b;
+        color: rgb(255, 255, 255);
+        border: 2px solid #cecbc9;
         border-radius: 10%;
-        background-color: blanchedalmond;
-        box-shadow: rgb(255, 123, 0);
+        background-color: rgb(0, 0, 0);
+        box-shadow: rgb(0, 0, 0);
         padding-bottom: 1rem;
         padding-top: 1rem;
         padding-right: 0.9rem;
@@ -198,11 +199,15 @@ nav.fill ul li a:hover:after {
         right: 2rem;
     }
     .virusanime {
-        position: absolute;
+        /* position: absolute;
         top: 39rem;
         left: 7rem;
         width: 8rem;
-        height: 8rem;
+        height: 8rem; */
+        display: none;
+    }
+    #footerlast{
+        display: none;
     }
     .stayhome {
         text-align: center;
@@ -408,7 +413,7 @@ nav.fill ul li a:hover:after {
 }
 
 #s1 {
-    background-color: #ff9034;
+    background-color: #000000;
     color: blanchedalmond;
 }
 
@@ -418,11 +423,11 @@ nav.fill ul li a:hover:after {
 }
 
 #s3 {
-    background-color: blanchedalmond;
+    background-color: rgb(0, 0, 0);
 }
 
 #s4 {
-    background-color: #ff9034;
+    background-color: #000000;
     color: blanchedalmond;
 }
 
@@ -531,4 +536,44 @@ ul.social-icons {
 
 footer {
     text-align: center;
+}
+
+
+.card{
+	background: #000000;
+	border-radius: 30px;
+	width: 20rem;
+	border: 1px solid slategray;
+	margin:auto;
+	margin-top:6vh;s
+    transition:0.2s ease-in-out;
+    
+}
+.card:hover{
+    transform: scale(1.03);
+    box-shadow: #4b4b4a 4px 5px 4px;
+}
+.number{
+	font-weight:600;
+	font-size: 6vh;
+}
+.confirmed{
+	color: #27acac;
+}
+.recovered{
+	color: #039435;
+}
+.deaths{
+	color: #E50914;
+}
+.active{
+	color: #e6ab0b;
+}
+
+#footerlast{
+    position: fixed;
+    bottom: 3%;
+    text-align: center;
+    justify-content: center;
+    left:45%;
 }
