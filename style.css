@@ -551,7 +551,20 @@ footer {
 }
 .card:hover{
     transform: scale(1.03);
-    box-shadow: #4b4b4a 4px 5px 4px;
+   filter: invert(1);
+
+}
+ #confirmed{
+    box-shadow:#90f1f1 3px 4px 3px;
+}
+ #deaths{
+    box-shadow:#f74952 3px 4px 3px;
+}
+ #active{
+    box-shadow:#facd52 3px 4px 3px;
+}
+ #recovered{
+    box-shadow:#6af89c 3px 4px 3px;
 }
 .number{
 	font-weight:600;
