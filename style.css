@@ -31,6 +31,7 @@ nav {
     margin: 0 auto;
     background: #000000;
     padding: 20px 0;
+    box-shadow:2px 3px 1px gray;
 }
 
 nav ul {
