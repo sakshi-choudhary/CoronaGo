@@ -6,8 +6,11 @@ body {
     margin: 0;
     font-family: 'Comfortaa', cursive;
     background-color: #000000;
-}
 
+}
+h6{
+	text-align: center;
+}
 h1 {
     font-family: 'Literata', serif;
     text-align: center;
