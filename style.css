@@ -1,3 +1,30 @@
+:root{
+    --primary-color:#edf2fc;
+    --secondary-color:#000000;
+    
+}
+.dark-theme{
+    --primary-color:black;
+    --secondary-color:white;
+}
+body {
+    padding: 25px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 25px;
+}
+#icon{
+    width:30px;
+    position: absolute;
+    right :10%;
+    top:12%;
+    cursor:pointer;
+    transition:.4s;
+}
+
+.title-text{
+    color: var(--secondary-color);
+}
 html {
     scroll-behavior: smooth;
 }
@@ -5,7 +32,7 @@ html {
 body {
     margin: 0;
     font-family: 'Comfortaa', cursive;
-    background-color: #000000;
+    background-color:var(--primary-color);
 
 }
 h6{
@@ -32,7 +59,7 @@ nav {
     color: blanchedalmond;
     width: 100%;
     margin: 0 auto;
-    background: #000000;
+    background: var(--primary-color);
     padding: 20px 0;
     box-shadow:2px 3px 1px gray;
 }
@@ -152,7 +179,7 @@ nav.fill ul li a:hover:after {
         color: rgb(0, 170, 182);
         border: 2px solid #fc801b;
         border-radius: 10%;
-        background-color: blanchedalmond;
+        background-color: rgb(225, 135, 0);
         box-shadow: rgb(255, 123, 0);
         padding-bottom: 1rem;
         padding-top: 1rem;
@@ -417,7 +444,7 @@ nav.fill ul li a:hover:after {
 }
 
 #s1 {
-    background-color: #000000;
+    background-color:var(--primary-color);
     color: blanchedalmond;
 }
 
@@ -431,7 +458,7 @@ nav.fill ul li a:hover:after {
 }
 
 #s4 {
-    background-color: #000000;
+    background-color:var(--primary-color);
     color: blanchedalmond;
 }
 
@@ -441,11 +468,11 @@ nav.fill ul li a:hover:after {
 
 a {
     text-decoration: none;
-    color: #fff;
+    color: var(--secondary-color);
 }
 
 p>a:hover {
-    color: #d9d9d9;
+    color: #9e8787;
     text-decoration: underline;
 }
 
@@ -544,12 +571,12 @@ footer {
 
 
 .card{
-	background: #000000;
+	background: var(--primary-color);
 	border-radius: 30px;
 	width: 20rem;
 	border: 1px solid slategray;
 	margin:auto;
-	margin-top:6vh;s
+	margin-top:6vh;
     transition:0.2s ease-in-out;
     
 }
@@ -588,6 +615,7 @@ footer {
 }
 
 #footerlast{
+    color: var(--secondary-color);
     position: fixed;
     bottom: 3%;
     text-align: center;

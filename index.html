@@ -17,6 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@700&family=Concert+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.less">
+    <link rel="stylesheet" href="./Theme_toogler/dark_light.css" />
      <title>CoronaGo</title>
 </head>
 
@@ -48,6 +49,11 @@
 
             </ul> -->
         </div>
+        <img
+        src="./Theme_toogler/moon.png"
+        id="icon"
+        alt="Theme Toogle"
+      />
     </nav>
     <section class="slide" id="s1">
         <span class="virusanime">
@@ -63,7 +69,7 @@
                   <div class="card-body">
                   
                     <h3 class="card-title number active"><span class="count"></span></h3>
-                    <h5 class="card-title">Total Active</h5>
+                    <h5 class="card-title title-text">Total Active</h5>
                   </div>
                 </div>
             </div>
@@ -72,7 +78,7 @@
                   <div class="card-body">
                
                     <h3 class="card-title confirmed number count"></h3>
-                    <h5 class="card-title">Total Confirmed</h5>
+                    <h5 class="card-title title-text">Total Confirmed</h5>
                   </div>
                 </div>
             </div>
@@ -83,7 +89,7 @@
                   <div class="card-body">
                   
                     <h3 class="card-title number deaths count"></h3>
-                    <h5 class="card-title">Total Deaths</h5>
+                    <h5 class="card-title title-text">Total Deaths</h5>
                   </div>
                 </div>
             </div>
@@ -92,7 +98,7 @@
                   <div class="card-body">
                
                     <h3 class="card-title cases number recovered count"></h3>
-                    <h5 class="card-title">Total Recovered</h5>
+                    <h5 class="card-title title-text">Total Recovered</h5>
                   </div>
                 </div>
             </div>
@@ -171,6 +177,18 @@
 </body>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+<script>
+        var icon = document.getElementById("icon");
+        icon.onclick = function () {
+        document.body.classList.toggle("dark-theme");
+        if (document.body.classList.contains("dark-theme")) {
+          icon.src = "./Theme_toogler/sun.png";
+        } else {
+          icon.src = "./Theme_toogler/moon.png";
+        }
+      };
+</script>
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
